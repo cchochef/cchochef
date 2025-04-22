@@ -11,7 +11,7 @@
   <a href="mailto:you@domain.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-red?style=for-the-badge&logo=gmail" alt="gmail"/>
   </a>
-  <a href="https://github.com/bizism" target="_blank">
+  <a href="https://github.com/cchochef" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github" alt="github"/>
   </a>
   <a href="https://devpost.com/your-devpost" target="_blank">
