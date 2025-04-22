@@ -22,3 +22,8 @@
 👋 Hi, I’m Chiho 
 ☎️ You can contact me via `cchochef@gmail.com`
 
+### 🐍 GitHub Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/epsilonxagritech/epsilonxagritech/output/github-contribution-grid-snake.svg" alt="snake gif" />
+</p>
