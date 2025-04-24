@@ -21,7 +21,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
           svg_background: transparent  # <-- 이거 반드시 포함
 
-      - name: 📤 Commit and push to `output` branch
+      - name: 📤 Commit and push to `output` branch!
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
