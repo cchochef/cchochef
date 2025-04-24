@@ -2,26 +2,26 @@ name: Generate Snake Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *" # 매일 자정 UTC에 실행
-  workflow_dispatch:     # 수동 실행도 가능
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ⬇️ Checkout repository
+      - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: 🐍 Generate GitHub Contribution Snake
+      - name: 🐍 Generate the snake
         uses: Platane/snk@v3
         with:
-          github_user_name: cchochef  # 여기에 본인의 GitHub ID
+          github_user_name: cchochef
           outputs: |
             dist/github-contribution-grid-snake.svg
-          svg_background: transparent  # 👉 배경을 투명하게 설정
+          svg_background: transparent  # <-- 이거 반드시 포함
 
-      - name: 📤 Push the generated SVG to output branch
+      - name: 📤 Commit and push to `output` branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
