@@ -2,14 +2,15 @@ name: Generate Snake Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  # 매일 00시에 실행
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - name: Generate the snake
+        uses: Platane/snk@v3
         with:
           github_user_name: cchochef
           outputs: |
